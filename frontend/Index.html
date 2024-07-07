@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+    <script defer src="index.js"></script> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Mon Site E-commerce</h1>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="cart.html">Cart</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button id="add-product-btn">Add Product</button>
+        
+        <div class="products-list">
+            
+        </div>
+    </div>
+
+    
+    <div id="add-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Product</h2>
+            <form id="add-product-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea><br><br>
+                <label for="price">Price ($):</label>
+                <input type="number" id="price" name="price" step="0.01" required><br><br>
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script defer src="index.js"></script>
+</body>
+</html>
